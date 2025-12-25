@@ -2,6 +2,7 @@
 
 import { use, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 /* =====================
    DATA PER SLUG
@@ -295,9 +296,9 @@ export default function WorkGallery({
     <>
       {/* HEADER */}
       <header className="work-header">
-        <a href="/" className="work-header-title">
-          MUHAMMAD DANNIS
-        </a>
+        <Link href="/" className="work-header-title">
+        MUHAMMAD DANNIS
+      </Link>
       </header>
 
       {/* TITLE */}
