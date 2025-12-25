@@ -1,4 +1,5 @@
-- src/global.d.ts
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export { };
 
 declare module '*.glb';
