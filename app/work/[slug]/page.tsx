@@ -312,7 +312,11 @@ export default function WorkGallery({
           <motion.div
             key={item.id}
             className="work-card"
-            style={{ ["--row" as "--row"]: item.span }}
+            style={
+              {
+                "--row": item.span,
+              } as const
+            }
             layoutId={`card-${slug}-${item.id}`}
             onClick={() => setActive(item)}
             whileHover={{ scale: 0.98 }}
