@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-expressions */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-export { };
+export {};
 
 declare module '*.glb';
 declare module '*.png';
@@ -18,8 +16,3 @@ declare global {
     }
   }
 }
-
-
-/// <reference types="vite/client" />
-declare module '*.glb';
-declare module '*.png';
