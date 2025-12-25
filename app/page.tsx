@@ -80,9 +80,9 @@ export default function Home() {
       <header ref={headerRef}>
         <div className="container">
           <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a
+            <Link href="#about">About</Link>
+            <Link href="#work">Work</Link>
+            <Link
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
@@ -90,7 +90,7 @@ export default function Home() {
                 }}
               >
                 Contact
-              </a>
+              </Link>
           </nav>
         </div>
       </header>
@@ -236,26 +236,26 @@ export default function Home() {
       <section id="contact" ref={contactRef} className="contact">
         <div className="contact-inner">
           <h2>GET IN TOUCH</h2>
-          <a href="mailto:dannismuhammad33@email.com" className="email">
+          <Link href="mailto:dannismuhammad33@email.com" className="email">
             dannismuhammad33@email.com
-          </a>
+          </Link>
 
           <div className="social">
-            <a
+            <Link
                 href="https://instagram.com/mdannish_"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Instagram
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="https://tiktok.com/@regaliaa_"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 TikTok
-              </a>
+              </Link>
           </div>
         </div>
       </section>
