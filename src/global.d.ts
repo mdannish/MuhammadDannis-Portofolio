@@ -10,7 +10,7 @@ declare module 'meshline' {
 
 declare module '@react-three/fiber' {
   interface ThreeElements {
-    meshLineGeometry: any;
-    meshLineMaterial: any;
+    meshLineGeometry: unknown;
+    meshLineMaterial: unknown;
   }
 }
