@@ -310,17 +310,13 @@ export default function WorkGallery({
       <section className="work-gallery">
         {items.map((item) => (
           <motion.div
-            key={item.id}
-            className="work-card"
-            style={
-              {
-                "--row": item.span,
-              } as const
-            }
-            layoutId={`card-${slug}-${item.id}`}
-            onClick={() => setActive(item)}
-            whileHover={{ scale: 0.98 }}
-          >
+           key={item.id}
+           className="work-card"
+           data-row={item.span}
+           layoutId={`card-${slug}-${item.id}`}
+           onClick={() => setActive(item)}
+           whileHover={{ scale: 0.98 }}
+            >
             {item.type === "image" ? (
               <motion.img
                 src={item.src}
