@@ -22,7 +22,10 @@ const lanyard = './assets/lanyard/lanyard.png';
 
 import './Lanyard.css';
 
-extend({ MeshLineGeometry, MeshLineMaterial });
+extend({
+  MeshLineGeometry: MeshLineGeometry as unknown,
+  MeshLineMaterial: MeshLineMaterial as unknown,
+});
 
 interface LanyardProps {
   position?: [number, number, number];
