@@ -109,6 +109,19 @@ nav a:hover {
   align-items: center;
 }
 
+.hero-text {
+  width: 100%;
+  padding: 0 24px; /* BUFFER KIRI-KANAN */
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.hero-text h1 {
+  white-space: nowrap;
+  max-width: 100%;
+}
+
 .hero h1 {
   position: relative;
   z-index: 1;
@@ -528,5 +541,145 @@ section p {
   body {
     background-color: var(--background);
     color: var(--foreground);
+  }
+}
+
+/* =========================
+   MOBILE FIX (GLOBAL)
+========================= */
+@media (max-width: 768px) {
+
+  /* ===== NAVBAR ===== */
+  header {
+    top: 12px;
+    pointer-events: auto;
+  }
+
+  nav {
+    gap: 20px;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  /* ===== HERO ===== */
+  .hero,
+  .hero-wrapper {
+    height: 100svh;
+    line-height: 1; /* dari 0.9 → 1 */
+    padding-bottom: 0.05em; /* safety buffer glyph */
+  }
+
+  .hero h1 {
+    font-size: clamp(64px, 16vw, 96px);
+    text-align: center;
+    line-height: 1; /* dari 0.9 → 1 */
+    padding-bottom: 0.05em; /* safety buffer glyph */
+  }
+
+  .hero-text {
+    padding: 0 32px; /* tambah napas */
+  }
+
+  /* ===== SECTION PADDING ===== */
+  section {
+    padding: 80px 0;
+  }
+
+  /* ===== ABOUT ===== */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tools {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .tool-mask {
+    width: 56px;
+    height: 56px;
+  }
+
+  /* ===== WORK (HOME) ===== */
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-card {
+    height: 260px;
+  }
+
+  /* ===== WORK TITLE ===== */
+  .work-title,
+  .work-title-center {
+    padding: 56px 24px 32px;
+  }
+
+  .work-title h1,
+  .work-title-center h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  /* ===== WORK GALLERY ===== */
+  .work-gallery {
+    grid-template-columns: 1fr;
+    padding: 0 16px 80px;
+    gap: 16px;
+  }
+
+  .work-card {
+    border-radius: 16px;
+  }
+
+  /* ===== MODAL ===== */
+  .modal {
+    max-width: calc(100vw - 24px);
+    max-height: 92svh;
+    border-radius: 16px;
+  }
+
+  .modal img,
+  .modal video {
+    max-height: 50svh;
+    object-fit: contain;
+  }
+
+  .modal-content {
+    padding: 16px;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content p {
+    font-size: 13px;
+  }
+
+  /* ===== CONTACT (PENTING) ===== */
+  .contact {
+    position: relative;
+    height: auto;
+    transform: none;
+  }
+
+  .contact-inner {
+    padding: 80px 24px;
+  }
+
+  .contact h2 {
+    font-size: clamp(36px, 10vw, 64px);
+  }
+
+  .contact .email {
+    font-size: 20px;
+  }
+
+  .contact .social {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
