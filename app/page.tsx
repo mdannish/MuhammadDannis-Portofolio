@@ -101,9 +101,9 @@ export default function Home() {
           <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
         </div>
 
-        <h1>
-          PORT<span style={{ color: "#1447e6" }}>O</span>FOLIO
-        </h1>
+        <div className="hero-text">
+          <h1>PORT<span style={{ color: "#1447e6" }}>O</span>FOLIO</h1>
+          </div>
       </div>
 
       {/* Curved Loop */}
