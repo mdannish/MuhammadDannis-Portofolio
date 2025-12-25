@@ -135,9 +135,9 @@ export default function Home() {
             <div>
               <h2>About Me</h2>
               <p>
-                I am a multidisciplinary creative working across motion graphic,
-                AR, and digital design. I focus on clarity, strong visual
-                language, and meaningful experiences.
+                I work between logic and visuals, blending IT, motion graphics, VFX,
+                and AR as a space for exploration. To me, technology is not just a system,
+                but a canvas to shape experiences, emotions, and stories through digital work.
               </p>
 
               <br />
