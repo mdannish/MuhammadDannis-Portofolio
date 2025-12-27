@@ -135,9 +135,10 @@ export default function Home() {
             <div>
               <h2>About Me</h2>
               <p>
-                I work between logic and visuals, blending IT, motion graphics, VFX,
-                and AR as a space for exploration. To me, technology is not just a system,
-                but a canvas to shape experiences, emotions, and stories through digital work.
+                Motion-focused Video Editor and VFX Artist with hands-on experience in short-form digital content, motion graphics,
+                and augmented reality projects. Specialized in creating visually striking edits that combine dynamic pacing, motion design,
+                and AR-driven visuals for social media content. Comfortable working with creative briefs, fast iterations, and performance-oriented
+                visual storytelling.
               </p>
 
               <br />
